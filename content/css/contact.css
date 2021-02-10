@@ -1,0 +1,22 @@
+/* Contact */
+.contact-form  .form-control {
+    border: solid 1px var(--main-color);
+    border-radius: 12px;
+}
+.form-control:focus {
+    border-color: var(--main-color);
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(199 156 96 / 25%);
+            box-shadow: 0 0 0 0.25rem rgb(199 156 96 / 25%);
+}
+.contact-form .btn {
+    background: url(../assetts/img/tm-brown-button.png) no-repeat;
+    color: var(--main-color);
+    width: 200px;
+    height: 50px;
+    outline: 0;
+}
+.contact-map {
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid 5px #fff;
+}

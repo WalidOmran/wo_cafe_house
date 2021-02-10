@@ -1,0 +1,64 @@
+/* our-menu__list-group */
+.list-group  {
+    max-width: 300px;
+    background: url(../assetts/img/vertical-menu-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 101%;
+    padding: 10px 0;
+}
+.list-group-item {
+    background: transparent !important;
+    padding: 5px 1rem;
+    color: var(--dark-main-color);
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+.list-group-item:hover { color: var(--main-color);}
+/* our-menu__menu-content */
+.menu-content__item {
+    background: #fff;
+    cursor: pointer;
+}
+.menu-content__item .item__info { padding-left: 25px; }
+.info__title { -webkit-transition: color .3s; -o-transition: color .3s; transition: color .3s; }
+.menu-content__item:hover .info__title { color: var(--main-color); }
+.menu-content__item .info__desc {
+    font-size: 14px;
+    color: rgb(82, 76, 76);
+    text-align: justify;
+}
+.item__price {
+    width: 220px;
+    height: 95px;
+    background-color: rgb(82, 76, 76);  
+}
+.item__price h2 {
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(174,174,174);
+    border: solid 2px rgb(174,174,174);
+    outline: none;
+    line-height: 2.3;
+    -webkit-transition: color .3s, border .3s;
+    -o-transition: color .3s, border .3s;
+    transition: color .3s, border .3s;
+}
+.menu-content__item:hover .item__price h2 {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+ /* Medium devices (tablets, between 768px and  992px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .item__price { width: 160px; }
+ }
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .list-group { margin: auto; }
+    .menu-content__item { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+    .menu-content__item .info__title,
+    .menu-content__item .info__desc { text-align: center; }
+    .item__price { width: 120px; }  
+ }

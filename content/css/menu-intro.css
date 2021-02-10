@@ -1,0 +1,17 @@
+/* Menu Intro */
+.menu-intro__info h3 {
+  font-family: "Damion", cursive;
+  color: var(--main-color);
+}
+.menu-intro__info a {
+  background: url(../assetts/img/tm-brown-button.png) no-repeat;
+  color: var(--main-color);
+  width: 200px;
+  height: 50px;
+  line-height: 3;
+}
+.menu-intro__img {
+  background: url(../assetts/img/shadow.png) no-repeat 0 bottom;
+  padding-bottom: 9px;
+}
+.menu-intro__img img { border: solid 8px #fff; }

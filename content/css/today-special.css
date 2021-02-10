@@ -1,0 +1,11 @@
+/* Today Special */
+.today-special__card {
+    border: solid 8px #fff;
+    max-width: 534px;
+}
+.today-special__card figcaption { background: #00000099; }
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .today-special__card.card--size { width: 251px; }
+}
+
